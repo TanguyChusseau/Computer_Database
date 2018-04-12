@@ -62,14 +62,11 @@ public class WebDataSourceConfiguration {
 	    
 	    // Hibernate properties
 	    Properties additionalProperties = new Properties();
-	    additionalProperties.put(HIBERNATE_DIALECT, 
-	        env.getProperty(HIBERNATE_DIALECT));
-	    additionalProperties.put(HIBERNATE_SHOW_SQL, 
-	        env.getProperty(HIBERNATE_SHOW_SQL));
-	    additionalProperties.put(HIBERNATE_HBM2DDL_AUTO, 
-	        env.getProperty(HIBERNATE_HBM2DDL_AUTO));
-	    entityManagerFactory.setJpaProperties(additionalProperties);
+	    additionalProperties.put(HIBERNATE_DIALECT, env.getProperty(HIBERNATE_DIALECT));
+	    additionalProperties.put(HIBERNATE_SHOW_SQL,env.getProperty(HIBERNATE_SHOW_SQL));
+	    additionalProperties.put(HIBERNATE_HBM2DDL_AUTO, env.getProperty(HIBERNATE_HBM2DDL_AUTO));
 	    
+	    entityManagerFactory.setJpaProperties(additionalProperties);
 	    return entityManagerFactory;
 	  }
 

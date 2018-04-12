@@ -15,10 +15,10 @@ public class Company {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = ID)
 	private int id;
 	
-	@Column(name = "name")
+	@Column(name = NAME)
 	private String name;
 	
 	public Company() {

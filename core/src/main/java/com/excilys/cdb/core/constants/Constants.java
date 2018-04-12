@@ -16,9 +16,11 @@ public class Constants {
 	//Computer fields
 	public static final String COMPUTER = "computer";
 	public static final String COMPUTER_ID_FIELD = "computer.id";
+	public static final String ID = "id";
 	public static final String COMPUTER_NAME_FIELD = "computer.name";
-	public static final String COMPUTER_INTRODUCTION_DATE_FIELD = "introduced";
-	public static final String COMPUTER_DISCONTINUATION_DATE_FIELD = "discontinued";
+	public static final String NAME = "name";
+	public static final String INTRODUCTION_DATE = "introduced";
+	public static final String DISCONTINUATION_DATE = "discontinued";
 	public static final String COMPUTER_COMPANY_ID_FIELD = "company_id";
 	
 	//Company fields
@@ -30,7 +32,7 @@ public class Constants {
 	public static final String COUNT = "count(*)";
 
 	//Paths
-	public static final String BASE_PATH = "com.excilys.cdb";
+	public static final String BASE_PATH = "main.java.com.excilys.cdb";
 	public static final String CSS_PATH = "/css/";
 	public static final String CSS_FILES = "/css/**";
 	public static final String JS_PATH = "/css/";

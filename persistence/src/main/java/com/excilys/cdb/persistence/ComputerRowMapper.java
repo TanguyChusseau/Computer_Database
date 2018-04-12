@@ -17,8 +17,8 @@ public class ComputerRowMapper implements RowMapper<Computer> {
     @Override
     public Computer mapRow(ResultSet resultSet, int rowNum) throws SQLException {
         Company company = new Company(resultSet.getInt(COMPUTER_COMPANY_ID_FIELD), resultSet.getString(COMPANY_NAME_FIELD));
-        Computer computer = new Computer(resultSet.getInt(COMPUTER_ID_FIELD), resultSet.getString(COMPUTER_NAME_FIELD), resultSet.getTimestamp(COMPUTER_INTRODUCTION_DATE_FIELD),
-                resultSet.getTimestamp(COMPUTER_DISCONTINUATION_DATE_FIELD), company);
+        Computer computer = new Computer(resultSet.getInt(COMPUTER_ID_FIELD), resultSet.getString(COMPUTER_NAME_FIELD), resultSet.getTimestamp(INTRODUCTION_DATE),
+                resultSet.getTimestamp(DISCONTINUATION_DATE), company);
         return computer;
     }
     
