@@ -23,13 +23,14 @@
 	<dependencies>
 		<!-- ===== Modules ===== -->
 		<dependency>
-			<groupId>com.excilys.cdb</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>binding</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.excilys.cdb</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>service</artifactId>
 		</dependency>
+
 		<!-- ===== Libraries ===== -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -54,6 +55,10 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>

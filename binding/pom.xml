@@ -19,9 +19,10 @@
 	<dependencies>
 		<!-- ===== Modules ===== -->
 		<dependency>
-			<groupId>com.excilys.cdb</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>core</artifactId>
 		</dependency>
+
 		<!-- ===== Libraries ===== -->
 		<dependency>
 			<groupId>org.springframework</groupId>

@@ -19,17 +19,18 @@
 	<dependencies>
 		<!-- ===== Modules ===== -->
 		<dependency>
-			<groupId>com.excilys.cdb</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>core</artifactId>
 		</dependency>
+
 		<!-- ===== Libraries ===== -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
+			<artifactId>hibernate-annotations</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-annotations</artifactId>
+			<artifactId>hibernate-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>

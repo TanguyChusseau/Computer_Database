@@ -17,6 +17,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+		<!-- ===== Libraries ===== -->
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
