@@ -12,12 +12,12 @@ import java.util.InputMismatchException;
 import java.util.Map.Entry;
 import java.util.Optional;
 import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.TreeMap;*/
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.excilys.cdb.core.model.Computer;
+/*import com.excilys.cdb.core.model.Computer;
 import com.excilys.cdb.core.page.*;
 import com.excilys.cdb.service.*;*/
 
@@ -26,11 +26,11 @@ public class CommandLineInterface {
 	/*private CompanyService companyService;
 	private ComputerService computerService;
 	private static String computerIntroductionDate;
-	private static String computerDiscontinuationDate;
+	private static String computerDiscontinuationDate;*/
 	
 	static final Logger LOGGER = LogManager.getLogger(CommandLineInterface.class);
 	
-	public CommandLineInterface() {	
+	/*public CommandLineInterface() {	
 	}
 	
 	public static void main(String[] args) throws SQLException {
