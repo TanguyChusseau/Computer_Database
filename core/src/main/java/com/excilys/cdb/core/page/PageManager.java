@@ -2,9 +2,6 @@ package main.java.com.excilys.cdb.core.page;
 
 import java.util.ArrayList;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 public abstract class PageManager <T> {
 
 	protected int limit;
@@ -14,8 +11,6 @@ public abstract class PageManager <T> {
 	protected String filterField;
 	protected ArrayList<T> pageData = new ArrayList<>();
 	
-	final static Logger LOGGER = LogManager.getLogger(PageManager.class);
-
 	@UserChoice(name = "Get previous page ", order = 1)
 	public boolean previous() {
 		if(offset - limit < 0)
