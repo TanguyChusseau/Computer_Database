@@ -60,7 +60,7 @@ public class JpaConfig {
 		additionalProperties.put(HIBERNATE_HBM2DDL_AUTO, env.getProperty(HIBERNATE_HBM2DDL_AUTO));
 
 		entityManagerFactory.setDataSource(dataSource());
-		entityManagerFactory.setPackagesToScan(env.getProperty(HIBERNATE_PACKAGES_TO_SCAN));
+		entityManagerFactory.setPackagesToScan(env.getProperty(PACKAGES_TO_SCAN));
 		entityManagerFactory.setJpaVendorAdapter(vendorAdapter);
 		entityManagerFactory.setJpaProperties(additionalProperties);
 		return entityManagerFactory;

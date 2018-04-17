@@ -17,7 +17,7 @@
 	<!-- =============================================================== -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hibernateCore.version>5.2.15.Final</hibernateCore.version>
+		<hibernate.version>5.2.12.Final</hibernate.version>
 		<hibernateAnnotations.version>3.5.6-Final</hibernateAnnotations.version>
 		<hibernatePersistence.version>1.0.2.Final</hibernatePersistence.version>
 		<javax.version>2.1.1</javax.version>
@@ -137,7 +137,7 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
-				<version>${hibernateCore.version}</version>
+				<version>${hibernate.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate.javax.persistence</groupId>

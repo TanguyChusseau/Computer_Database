@@ -11,7 +11,7 @@ public class Constants {
 	public static final String HIBERNATE_DIALECT = "hibernate.dialect";
 	public static final String HIBERNATE_SHOW_SQL = "hibernate.show_sql";
 	public static final String HIBERNATE_HBM2DDL_AUTO = "hibernate.hbm2ddl.auto";
-	public static final String HIBERNATE_PACKAGES_TO_SCAN = "packagesToScan";
+	public static final String PACKAGES_TO_SCAN = "packagesToScan";
 	
 	// Computer fields
 	public static final String COMPUTER = "computer";
