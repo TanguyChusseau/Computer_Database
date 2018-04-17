@@ -21,7 +21,7 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {BASE_PATH})
+@ComponentScan(basePackages = {WEBAPP_PATH})
 public class WebMvcConfig implements WebMvcConfigurer {
 
 	@Override

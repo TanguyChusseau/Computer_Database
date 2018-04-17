@@ -11,7 +11,7 @@ public class Constants {
 	public static final String HIBERNATE_DIALECT = "hibernate.dialect";
 	public static final String HIBERNATE_SHOW_SQL = "hibernate.show_sql";
 	public static final String HIBERNATE_HBM2DDL_AUTO = "hibernate.hbm2ddl.auto";
-	public static final String HIBERNATE_PACKAGES_TO_SCAN = "entitymanager.packagesToScan";
+	public static final String HIBERNATE_PACKAGES_TO_SCAN = "packagesToScan";
 	
 	// Computer fields
 	public static final String COMPUTER = "computer";
@@ -32,7 +32,10 @@ public class Constants {
 	public static final String COUNT = "count(*)";
 
 	// Paths
-	public static final String BASE_PATH = "main.java.com.excilys.cdb";
+	public static final String MODEL_PATH = "main.java.com.excilys.cdb.core.model";
+	public static final String PERSISTENCE_PATH = "main.java.com.excilys.cdb.persistence";
+	public static final String SERVICE_PATH = "main.java.com.excilys.cdb.core.service";
+	public static final String WEBAPP_PATH = "main.webapp.spring";
 	public static final String CSS_PATH = "/css/";
 	public static final String CSS_FILES = "/css/**";
 	public static final String JS_PATH = "/css/";

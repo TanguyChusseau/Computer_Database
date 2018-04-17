@@ -27,7 +27,7 @@
 		<mysql.version>6.0.6</mysql.version>
 		<servlet.version>3.0.1</servlet.version>
 		<slf4j.version>1.7.25</slf4j.version>
-		<spring.version>5.0.5.RELEASE</spring.version>
+		<spring.version>5.0.0.RELEASE</spring.version>
 		<springData.version>2.0.5.RELEASE</springData.version>
 		<taglibs.version>1.1.2</taglibs.version>
 	</properties>
@@ -88,6 +88,7 @@
 			</dependency>
 
 			<!-- ===== Libraries ===== -->
+			<!-- Javax -->
 			<dependency>
 				<groupId>javax.servlet</groupId>
 				<artifactId>javax.servlet-api</artifactId>
@@ -104,21 +105,30 @@
 				<artifactId>jstl-api</artifactId>
 				<version>${jstl.version}</version>
 			</dependency>
+			<!-- MySQL -->
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql.version}</version>
 			</dependency>
+			<!-- Log4j -->
 			<dependency>
 				<groupId>org.apache.logging.log4j</groupId>
 				<artifactId>log4j-core</artifactId>
 				<version>${log4j.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<!-- Glassfish -->
+			<dependency>
 				<groupId>org.glassfish.web</groupId>
 				<artifactId>jstl-impl</artifactId>
 				<version>1.2</version>
 			</dependency>
+			<!-- Hibernate -->
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-annotations</artifactId>
@@ -134,31 +144,7 @@
 				<artifactId>hibernate-jpa-2.1-api</artifactId>
 				<version>${hibernatePersistence.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>${slf4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>taglibs</groupId>
-				<artifactId>standard</artifactId>
-				<version>${taglibs.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-beans</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-core</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
+			<!-- Spring -->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-jdbc</artifactId>
@@ -171,11 +157,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
-				<artifactId>spring-web</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
 				<artifactId>spring-webmvc</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
@@ -183,6 +164,12 @@
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-jpa</artifactId>
 				<version>${springData.version}</version>
+			</dependency>
+			<!-- Taglibs -->
+			<dependency>
+				<groupId>taglibs</groupId>
+				<artifactId>standard</artifactId>
+				<version>${taglibs.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

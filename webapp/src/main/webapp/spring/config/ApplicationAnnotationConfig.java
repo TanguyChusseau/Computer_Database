@@ -10,7 +10,7 @@ public class ApplicationAnnotationConfig extends AbstractAnnotationConfigDispatc
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] {WebDataSourceConfiguration.class};
+        return new Class<?>[] {JpaConfig.class};
     }
 
     @Override
