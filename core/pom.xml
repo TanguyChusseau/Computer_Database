@@ -1,38 +1,65 @@
-<?xml version="1.0"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.excilys.cdb</groupId>
-		<artifactId>Computer_Database</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<groupId>${cdb-group-id}</groupId>
+		<artifactId>ComputerDatabase</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<!-- === Module informations === -->
 	<artifactId>core</artifactId>
-	<name>core</name>
-	<url>http://maven.apache.org</url>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+	<packaging>jar</packaging>
+
+
 	<dependencies>
-		<!-- ===== Libraries ===== -->
 		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>jsp-api</artifactId>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-iostreams</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-annotations</artifactId>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-jpa</artifactId>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
 		</dependency>
+
 	</dependencies>
 </project>
